@@ -47,12 +47,14 @@ const MainSection = () => {
           placeholder="Enter Your Transaction"
           onChange={(e) => setText(e.target.value)}
           value={text}
+          required
         />
         <input
           type="number"
           placeholder="Enter Amount"
           onChange={(e) => setAmount(e.target.value)}
           value={amount}
+          required
         />
         <button>
           Save Transaction<i className="fa-solid fa-floppy-disk"></i>
